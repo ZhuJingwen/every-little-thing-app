@@ -1,0 +1,393 @@
+
+body{
+  margin: 0px;
+  padding: 0px;
+  width:375px;
+  height:667px;
+  background-color: #f2816f;
+}
+
+
+/* TODO */
+input[type=range] {
+    width: 100%;
+}
+
+#mainPage {
+    text-align:center;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    height:100%;
+}
+
+#detailPage {
+    /*text-align:center;*/
+    /*font-size: 2em;*/
+    width:100%;
+
+}
+
+#detailHeader{
+  text-align:center center;
+  height:30px;
+}
+
+.mainButton {
+  background-color: #FFFFFF;
+  color: #f2816f;;
+  	border: none;
+  	  font-family: 'Dosis', sans-serif;
+  	font-size: 18pt;
+    font-weight: 300;
+  	/*cursor: pointer;*/
+  	padding: 12px 80px;
+  	display: inline-block;
+  	margin: 15px 30px;
+  	letter-spacing: 1px;
+
+  	outline: none;
+  	/*position: relative;*/
+  	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	transition: all 0.2s;
+}
+
+#disconnectButton {
+  background-color:#fff;
+  color:#FFFFFF;
+  width:100%;
+    border: none;
+    font-family: inherit;
+    font-size: 24pt;
+    font-weight:300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    /*position: relative;*/
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    text-align: left;
+    height:71px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #fff;
+}
+
+#dressButton {
+  padding: 12px 40px;
+  display: inline-block;
+  margin-left: -7px;
+  margin-bottom: 0px;
+}
+
+#backButton {
+  background-color: #34485E;
+  color:#FFFFFF;
+  width:100%;
+    border: none;
+    font-family: inherit;
+    font-size: 24pt;
+    font-weight:300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    /*position: relative;*/
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    text-align: left;
+    height:71px;
+    margin:0;
+    padding: 0;
+    position: absolute;
+    bottom:0;
+
+}
+
+#sendButton{
+  background-color: #FFFFFF;
+  color: #E68A3A;
+  	border: none;
+  	font-family: inherit;
+  	font-size: 18pt;
+    font-weight: 300;
+  	/*cursor: pointer;*/
+  	padding: 12px 80px;
+  	display: inline-block;
+    margin: 20px auto;
+    display: block;
+    width: 80%;
+    letter-spacing: 1px;
+
+  	outline: none;
+  	/*position: relative;*/
+  	-webkit-transition: all 0.2s;
+  	-moz-transition: all 0.2s;
+  	transition: all 0.2s;
+}
+
+
+ul {
+    /*list-style: none;
+    border-bottom: 1px solid #d3d3d3;
+    text-align: left;*/
+}
+
+li {
+  background-color: #FFFFFF;
+  color: #AD64CB;
+    border: none;
+    font-family: inherit;
+    font-size: 18pt;
+    font-weight: 300;
+    /*cursor: pointer;*/
+    padding: 12px 80px;
+    /*display: inline-block;*/
+    margin: 15px 30px;
+    letter-spacing: 1px;
+
+    outline: none;
+    /*position: relative;*/
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    /*margin-left: -40px;
+    padding: 5px;
+    padding-top: 10px;*/
+    /*min-height: 50px;
+    border-top: 1px solid #d3d3d3;
+    font-size: 0.9em;*/
+}
+
+/*button {
+    -webkit-appearance: none;
+    font-size: 1.5em;
+    border-radius: 0;
+}*/
+
+
+#inputDiv{
+  width:100%;
+}
+
+#messageInput{
+  background-color:#E68A3A;
+  color:#FFFFFF;
+  /*padding: 12px 80px;*/
+  /*display: inline-block;*/
+  text-align:center center;
+  /*margin: 15px 30px;*/
+  border:none;
+  border-radius: 0;
+  border-bottom: solid 2px #FFFFFF;
+  transition: border 0.3s;
+  font-family: inherit;
+  font-size: 18pt;
+  font-weight: 300;
+  margin: 0 auto;
+  display: block;
+}
+
+.focus {
+  border-bottom: solid 2px #FFFFFF;
+}
+
+#resultDiv {
+  background-color: inherit;
+  color: #FFFFFF;
+    border: none;
+    font-family: inherit;
+    font-size: 18pt;
+    font-weight: 300;
+    /*cursor: pointer;*/
+    padding: 0px;
+    /*display: inline-block;*/
+    margin: 15px 30px;
+    letter-spacing: 1px;
+
+    outline: none;
+    /*position: relative;*/
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+*/
+
+
+
+
+body {
+  background-color: #ede9e6;
+}
+
+form {
+
+}
+
+h1 {
+  font-family: 'Dosis', sans-serif;
+  color:#fff;
+  text-align: center;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+label {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: #2A2A2A;
+  font-size: 14pt;
+}
+
+.section {
+  margin: 0;
+  padding: 40px 0 40px 0;
+}
+
+.odd {
+  background-color: #f2816f;
+}
+
+.even {
+  background-color: #ede9e6;
+}
+
+#title-wrapper {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  padding: 10px;  /*border: 5px solid #fff;
+    border-radius: 5px;*/
+}
+
+#title-wrapper h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 36px;
+  height:83px;
+}
+
+#title-wrapper p {
+  font-size: 36px;
+  color: #fff;
+  font-family: 'Dosis', sans-serif;
+  text-align: center;
+}
+
+.dropdown-menu li {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  width: 100%;
+  height: 83px;
+}
+
+.btn-default {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  background-color: #FFF;
+  color: #2A2A2A;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #2A2A2A;
+  font-size:24px;
+  width:100%;
+    height: 83px;
+}
+
+.btn-prev {
+
+ width:100%;
+  
+}
+
+.btn-next{
+  
+  width:100%;
+}
+
+.form-control {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #2A2A2A;
+  border-color: none;
+  box-shadow: none;
+  font-size:24px;
+  height: 48px;
+}
+
+.form-group label{
+  font-size:36px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.dropdown-menu li {
+  border: none;
+  outline: none;
+  border-radius: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+  color: #2A2A2A;
+}
+
+.dropdown-menu li:hover {
+  background-color: #ADACAD;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 5px;
+    height: 83px;
+}
+
+.active {
+  background-color: #5fc093 !important;
+}
+.page{
+  width:375px;
+  height:667px;
+}
+
+.center-wrapper{
+  font-size: 24px;
+}
+
+.center-wrapper h1{
+  text-align: center;
+  color: #fff;
+  font-size: 48px;
+}

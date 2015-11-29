@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300|Dosis:400,300' rel='stylesheet' type='text/css'>
+    
+    <title>Dressing Everything</title>
+  </head>
+  <body>
+    <div class="app">
+      <div id="mainPage">
+        <h1 id = "mainHeader">Dressing Everything</h1>
+        <ul id="deviceList">
+        </ul>
+        <!-- <button id="connectButton" class = "mainButton" >Connect Dress</button> -->
+        <button id="refreshButton" class = "mainButton" >Refresh</button>
+      </div>
+      <div id="detailPage">
+        <form id="myForm">
+          <div id="page-1" class="odd page">
+            <div class="container">
+              <div class="center-wrapper">
+                <h1>Add a new thing</h1>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="input-title" placeholder="Title" name="title" required>
+                </div>
+                <div class="form-group">
+                  <div class="btn-group" role="group">
+                    <button  id ="input-finished" type="button" class="btn btn-default btn-prev">Quick Input</button>
+                    <button type="button" class="btn btn-default btn-next">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="page-2" class="even page">
+            <div class="container">
+              <div class="center-wrapper">
+                <div class="form-group">
+                  <label for="input-category">Category</label>
+                  <div id ="input-category" class="btn-group" role="group" aria-label="Category">
+                    <button type="button" class="btn btn-default">ITP</button>
+                    <button type="button" class="btn btn-default">Life</button>
+                    <button type="button" class="btn btn-default">Family</button>
+                    <button type="button" class="btn btn-default">Hobby</button>
+                    <button type="button" class="btn btn-default">Work</button>
+                    <button id="input-category-other-btn" type="button" class="btn btn-default">Other</button>
+                  </div>
+                  <input type="text" class="form-control" id="input-category-other" placeholder="Other category" name="category">
+                </div>
+                <div class="form-group">
+                  <label for="input-topic">Topic</label>
+                  <input type="text" class="form-control" id="input-topic" placeholder = "Topic" name="topic">
+                  <div id="input-topic-btn" class="btn-group" role="group" aria-label="Topic">
+                    <button type="button" class="btn btn-default">Design</button>
+                    <button type="button" class="btn btn-default">Tech</button>
+                    <button type="button" class="btn btn-default">Handcrafts</button>
+                    <button type="button" class="btn btn-default">Art</button>
+                    <button type="button" class="btn btn-default">Culture</button>
+                    <button type="button" class="btn btn-default">Programming</button>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="btn-group" role="group" aria-label="Language">
+                    <button type="button" class="btn btn-default btn-prev">Prev</button>
+                    <button type="button" class="btn btn-default btn-next">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="page-3" class="odd page">
+            <div class="container">
+              <div class="center-wrapper">
+                <div class="form-group">
+                  <label for="input-people">People</label>
+                  <input type="text" class="form-control" id="input-people" placeholder="People" name="people">
+                  <div id="input-people-btn" class="btn-group" role="group" aria-label="People">
+                    <button type="button" class="btn btn-default">Brady</button>
+                    <button type="button" class="btn btn-default">Mom</button>
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <div class="btn-group" role="group" aria-label="Language">
+                    <button type="button" class="btn btn-default btn-prev">Prev</button>
+                    <button type="button" class="btn btn-default btn-next">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="page-4" class="even page">
+            <div class="container">
+              <div class="center-wrapper">
+                <div class="form-group">
+                  <label for="input-month">Month</label>
+                  <input type="text" class="form-control" id="input-month" placeholder="Month" name="month">
+                </div>
+                <div class="form-group">
+                  <label for="input-day">Day</label>
+                  <input type="text" class="form-control" id="input-day" placeholder="Day" name="day">
+                </div>
+                <div class="form-group">
+                  <label for="input-period">Time</label>
+                  <button type="button" class="btn btn-default" id="input-period" name="period">Period of time</button>
+                  <input type="text" class="form-control" id="input-startH" placeholder="Start Hour" name="startH">
+                  <input type="text" class="form-control" id="input-startM" placeholder="Start Minute" name="startM">
+                  <input type="text" class="form-control" id="input-endH" placeholder="End Hour" name="endH">
+                  <input type="text" class="form-control" id="input-endM" placeholder="End Minute" name="endM">
+                </div>
+                <div class="form-group">
+                  <label for="input-location">Location</label>
+                  <input type="text" class="form-control" id="input-location" placeholder="Location" name="location">
+                </div>
+                <div class="form-group">
+                  <div class="btn-group" role="group" aria-label="Language">
+                    <button type="button" class="btn btn-default btn-prev">Prev</button>
+                    <button type="button" class="btn btn-default btn-next">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="page-5" class="odd page">
+            <div class="container">
+              <div class="center-wrapper">
+                <div class="form-group">
+                  <label for="input-emotion">Emotion</label>
+                  <div id ="input-emotion" class="btn-group" role="group" aria-label="Emotion">
+                    <button type="button" class="btn btn-default">Happy</button>
+                    <button type="button" class="btn btn-default">Surprise</button>
+                    <button type="button" class="btn btn-default">Sad</button>
+                    <button type="button" class="btn btn-default">Angry</button>
+                    <button type="button" class="btn btn-default">Regret</button>
+                    <button type="button" class="btn btn-default">Anxious</button>
+                    <button id="input-emotion-other-btn" type="button" class="btn btn-default">Other</button>
+                  </div>
+                  <input type="text" class="form-control" id="input-emotion-other" placeholder="Other emotion" name="emotion">
+                </div>
+                <div class="form-group">
+                  <label for="input-description">Description</label>
+                  <input type="text" class="form-control" id="input-description" placeholder="Description" name="description">
+                  
+                </div>
+                <div class="form-group">
+                  <div class="btn-group" role="group" aria-label="Language">
+                    <button type="button" class="btn btn-default btn-prev">Prev</button>
+                    <button type="button" class="btn btn-default btn-next">Next</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="page-6" class="even page">
+            <div class="center-wrapper">
+              <div class="form-group">
+                <label for="input-shared">Sharing</label>
+                <button type="button" class="btn btn-default" id="input-shared" name="period">Shared</button>
+                <div id="shared-true">
+                  <input type="text" class="form-control" id="input-audience" placeholder="Audience" name="audience">
+                  <div id="input-audience-btn" class="btn-group" role="group" aria-label="People">
+                    <button type="button" class="btn btn-default">Brady</button>
+                    <button type="button" class="btn btn-default">Mom</button>
+                    <button type="button" class="btn btn-default">Friends</button>
+                  </div>
+                  <input type="text" class="form-control" id="input-media" placeholder="Media" name="media">
+                  <div id ="input-media-btn" class="btn-group" role="group" aria-label="Media">
+                    <button type="button" class="btn btn-default">Facebook</button>
+                    <button type="button" class="btn btn-default">Twitter</button>
+                    <button type="button" class="btn btn-default">Wechat</button>
+                    <button type="button" class="btn btn-default">Weibo</button>
+                    <button type="button" class="btn btn-default">Email</button>
+                    <button type="button" class="btn btn-default">Instagram</button>
+                    <button type="button" class="btn btn-default">Message</button>
+                  </div>
+                  <input type="text" class="form-control" id="input-feedback" placeholder="Feedback" name="feedback">
+                  <div class="form-group">
+                    <div class="btn-group" role="group" aria-label="Language">
+                      <button type="button" class="btn btn-default btn-prev">Prev</button>
+                      <button id="submitButton" type="button" class="btn btn-default">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          
+          <div id="invisible">
+            <div class="form-group">
+              <label for="input-language">Language</label>
+              <div id ="input-language" class="btn-group" role="group" aria-label="Language">
+                <button type="button" class="btn btn-default">English</button>
+                <button type="button" class="btn btn-default">Chinese</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="input-type">Type</label>
+              <div id ="input-type" class="btn-group" role="group" aria-label="Type">
+                <button type="button" class="btn btn-default">Do</button>
+                <button type="button" class="btn btn-default">Think</button>
+                <button type="button" class="btn btn-default">See</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="input-shared">About Thinking</label>
+              <button type="button" class="btn btn-default" id="input-tookAction" name="tookAction">Did take action?</button>
+              <input type="text" class="form-control" id="input-action" placeholder="Action" name="action">
+            </div>
+            <div class="form-group">
+              <label for="input-shared">About Seeing</label>
+              <input type="text" class="form-control" id="input-resource" placeholder="Resource" name="resource">
+              <div id ="input-resource-btn" class="btn-group" role="group" aria-label="Resource">
+                <button type="button" class="btn btn-default">Facebook</button>
+                <button type="button" class="btn btn-default">Twitter</button>
+                <button type="button" class="btn btn-default">Wechat</button>
+                <button type="button" class="btn btn-default">Weibo</button>
+                <button type="button" class="btn btn-default">Email</button>
+                <button type="button" class="btn btn-default">Blog</button>
+                <button type="button" class="btn btn-default">YouTube</button>
+                <button type="button" class="btn btn-default">ITP</button>
+                <button type="button" class="btn btn-default">Subway</button>
+              </div>
+              <div id ="input-attitude" class="btn-group" role="group" aria-label="Attitude">
+                <button type="button" class="btn btn-default">Agree</button>
+                <button type="button" class="btn btn-default">Disagree</button>
+                <button type="button" class="btn btn-default">Like</button>
+                <button type="button" class="btn btn-default">Dislike</button>
+                <button id="input-attitude-other-btn" type="button" class="btn btn-default">Other</button>
+              </div>
+              <input type="text" class="form-control" id="input-attitude-other" placeholder="Other attitude" name="attitude">
+              
+              <input type="text" class="form-control" id="input-reason" placeholder="Reason" name="reason">
+              <input type="text" class="form-control" id="input-url" placeholder="url" name="url">
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+    app.initialize();
+    </script>
+  </body>
+</html>
